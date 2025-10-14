@@ -41,9 +41,14 @@ return {
                 capabilities = capabilities
             })
 
+            vim.lsp.config('basedpyright', {
+                capabilities = capabilities
+            })
+
             require("mason").setup()
             require("mason-lspconfig").setup({
                 ensure_installed = {
+                    "basedpyright",
                     "lua_ls",
                     "clangd"
                 },

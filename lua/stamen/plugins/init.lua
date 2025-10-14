@@ -39,6 +39,7 @@ return {
         config = function ()
             require('lualine').setup()
         end
-    }
+    },
+    'ThePrimeagen/vim-be-good'
 
 }
