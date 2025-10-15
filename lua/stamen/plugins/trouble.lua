@@ -33,5 +33,15 @@ return {
       "<cmd>Trouble qflist toggle<cr>",
       desc = "Quickfix List (Trouble)",
     },
+    {
+        "]t",
+        "<cmd>lua require('trouble').next({ skip_groups = true, jump = true })<CR>",
+        desc = "Trouble: next diagnostic",
+    },
+    {
+        "[t",
+        "<cmd>lua require('trouble').prev({ skip_groups = true, jump = true })<CR>",
+        desc = "Trouble: previous diagnostic",
+    }
   },
 }

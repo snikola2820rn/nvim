@@ -40,6 +40,5 @@ return {
             require('lualine').setup()
         end
     },
-    'ThePrimeagen/vim-be-good'
 
 }
