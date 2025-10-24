@@ -45,9 +45,14 @@ return {
                 capabilities = capabilities
             })
 
+            vim.lsp.config('gopls', {
+                capabilities = capabilities
+            })
+
             require("mason").setup()
             require("mason-lspconfig").setup({
                 ensure_installed = {
+                    "gopls",
                     "basedpyright",
                     "lua_ls",
                     "clangd"
